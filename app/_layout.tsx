@@ -32,7 +32,7 @@ function InitialLayout() {
       // Already signed in but on an auth screen → go to app
       router.replace("/(tabs)");
     }
-  }, [isLoaded, isSignedIn, segments]);
+  }, [isLoaded, isSignedIn, segments, router]);
 
   return (
     <Stack screenOptions={{ headerShown: false }}>
