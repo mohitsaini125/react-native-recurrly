@@ -6,11 +6,9 @@ import { icons } from "@/constants/icons";
 import images from "@/constants/images";
 import { formatCurrency } from "@/lib/utils";
 import dayjs from "dayjs";
-import { styled } from "nativewind";
 import { useState } from "react";
 import { FlatList, Image, Text, View } from "react-native";
-import { SafeAreaView as RNSafeAreaView } from "react-native-safe-area-context";
-const SafeAreaView = styled(RNSafeAreaView);
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function App() {
         const [expandedSubscriptionId, setExpandedSubscriptionId] = useState<string | null>(null)
